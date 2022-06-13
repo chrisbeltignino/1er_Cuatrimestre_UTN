@@ -1,0 +1,27 @@
+12:02:14 **** Rebuild of configuration Debug for project Modificar ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Modificar.o" "..\\src\\Modificar.c" 
+..\src\Modificar.c: In function 'main':
+..\src\Modificar.c:20:38: warning: format '%d' expects argument of type 'int', but argument 3 has type 'int *' [-Wformat=]
+   20 |  printf("Valor dentro de Main: %d - %d", numero, &numero);
+      |                                     ~^           ~~~~~~~
+      |                                      |           |
+      |                                      int         int *
+      |                                     %n
+..\src\Modificar.c:24:51: warning: format '%d' expects argument of type 'int', but argument 3 has type 'int *' [-Wformat=]
+   24 |  printf("\nValor dentro de Main modificado: %d - %d", numero, &numero);
+      |                                                  ~^           ~~~~~~~
+      |                                                   |           |
+      |                                                   int         int *
+      |                                                  %n
+..\src\Modificar.c: In function 'modificar':
+..\src\Modificar.c:32:45: warning: format '%d' expects argument of type 'int', but argument 3 has type 'int *' [-Wformat=]
+   32 |  printf("\nValor dentro de Modificar: %d - %d", numero, &numero);
+      |                                            ~^           ~~~~~~~
+      |                                             |           |
+      |                                             int         int *
+      |                                            %n
+gcc -o Modificar.exe "src\\Modificar.o" 
+
+12:02:15 Build Finished. 0 errors, 3 warnings. (took 1s.345ms)
+

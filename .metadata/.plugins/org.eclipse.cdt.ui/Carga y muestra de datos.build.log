@@ -1,0 +1,7 @@
+12:01:51 **** Rebuild of configuration Debug for project Carga y muestra de datos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Carga y muestra de datos.o" "..\\src\\Carga y muestra de datos.c" 
+gcc -o "Carga y muestra de datos.exe" "src\\Carga y muestra de datos.o" 
+
+12:01:52 Build Finished. 0 errors, 0 warnings. (took 874ms)
+

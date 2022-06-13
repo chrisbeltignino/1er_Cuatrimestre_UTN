@@ -1,0 +1,11 @@
+12:02:12 **** Rebuild of configuration Debug for project Funciones-Generales ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones-Generales.o" "..\\src\\Funciones-Generales.c" 
+..\src\Funciones-Generales.c: In function 'CalcularPrecioBitcoin':
+..\src\Funciones-Generales.c:62:27: error: 'BITCOIN' undeclared (first use in this function)
+   62 |  precioConBitcoin = num / BITCOIN;
+      |                           ^~~~~~~
+..\src\Funciones-Generales.c:62:27: note: each undeclared identifier is reported only once for each function it appears in
+
+12:02:12 Build Failed. 1 errors, 0 warnings. (took 454ms)
+

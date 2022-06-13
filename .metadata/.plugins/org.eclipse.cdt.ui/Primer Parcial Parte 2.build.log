@@ -1,0 +1,12 @@
+12:02:15 **** Rebuild of configuration Debug for project Primer Parcial Parte 2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bicicleta.o" "..\\src\\Bicicleta.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo.o" "..\\src\\Trabajo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utn.o" "..\\src\\Utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer Parcial.o" "..\\src\\Primer Parcial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Servicio.o" "..\\src\\Servicio.c" 
+gcc -o "Primer Parcial Parte 2.exe" "src\\Bicicleta.o" "src\\Funciones.o" "src\\Primer Parcial.o" "src\\Servicio.o" "src\\Trabajo.o" "src\\Utn.o" 
+
+12:02:19 Build Finished. 0 errors, 0 warnings. (took 4s.156ms)
+

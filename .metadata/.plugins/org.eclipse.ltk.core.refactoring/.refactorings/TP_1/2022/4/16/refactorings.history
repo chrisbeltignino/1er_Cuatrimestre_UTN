@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;TP1/src/funciones.h&apos; to &apos;operaciones.h&apos;" description="Rename resource &apos;funciones.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/funciones.h" name="operaciones.h" stamp="1649969906642" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;TP1/src/validaciones.h&apos; to &apos;validacion.h&apos;" description="Rename resource &apos;validaciones.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/validaciones.h" name="validacion.h" stamp="1649969952890" updateReferences="true"/>
+</session>

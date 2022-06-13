@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;TigninoChristian_PP/src/EstadiaDiaria.c&apos; to &apos;ArrayConsulta.c&apos;" description="Rename resource &apos;EstadiaDiaria.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/EstadiaDiaria.c" name="ArrayConsulta.c" stamp="1652738549104" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;TigninoChristian_PP/src/EstadiaDiaria.h&apos; to &apos;ArrayConsulta.h&apos;" description="Rename resource &apos;EstadiaDiaria.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/EstadiaDiaria.h" name="ArrayConsulta.h" stamp="1652738560320" updateReferences="true"/>
+</session>

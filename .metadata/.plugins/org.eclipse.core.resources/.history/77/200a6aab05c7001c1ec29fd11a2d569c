@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "ArrayPassanger.h"
+
+#define T 300
+#define TY 4
+//#define TAMNAME 51
+//#define TAMLASTNAME 51
+//#define TAMFLYCODE 10
+//#define TAMDESC 10
+
+void limpiarConsola(void);
+void mostrarSeparador(void);
+
+void menu()
+{
+	setbuf(stdout, NULL);
+    int opcion;
+    int cantidadPasajeros = 5;
+    int ultimoIdIngresado= 4;
+
+    Passenger list[T];
+    initPassengers(list, T);
+    Type typeP[TY] = {{1,"Turistica"},{2,"Economica"},{3,"Business"},{4,"Primera clase"}};
+    //hardcodearEmpleado(lista,6);
+    do
+    {
+        opcion = menuDeOpciones("1.Alta\n2.Baja\n3.Modificar\n4.Mostrar\n5.Salir\nElija una opcion: ");
+        switch(opcion)
+        {
+            case 1:
+            	if(!cargarPasajero(list, T, typeP, &ultimoIdIngresado))
+				{
+            		cantidadPasajeros++;
+				}
+				system("pause");
+            	limpiarConsola();
+            	;
+                break;
+            case 2:
+            	modificarEmpleado(lista, T, sectores, TS);
+            break;
+            case 3:
+
+            break;
+            case 4:
+
+            break;
+            case 5:
+
+            break;
+
+            default:
+            	limpiarConsola();
+                printf("Ingrese una opcion valida");
+
+        }
+    }while(opcion!=5);
+}
+
+void limpiarConsola(void)
+{
+	printf("\n\n\n\n");
+}
+
+void mostrarSeparador(void)
+{
+	printf("--------------\n");
+}
+

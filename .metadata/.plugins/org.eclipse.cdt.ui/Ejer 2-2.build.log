@@ -1,0 +1,32 @@
+12:02:00 **** Rebuild of configuration Debug for project Ejer 2-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejer 2-2.o" "..\\src\\Ejer 2-2.c" 
+..\src\Ejer 2-2.c: In function 'main':
+..\src\Ejer 2-2.c:38:6: warning: unused variable 'productoNeg' [-Wunused-variable]
+   38 |  int productoNeg = 0;
+      |      ^~~~~~~~~~~
+..\src\Ejer 2-2.c:37:6: warning: unused variable 'sumPositivo' [-Wunused-variable]
+   37 |  int sumPositivo;
+      |      ^~~~~~~~~~~
+..\src\Ejer 2-2.c:34:6: warning: unused variable 'cantParImpar' [-Wunused-variable]
+   34 |  int cantParImpar;
+      |      ^~~~~~~~~~~~
+..\src\Ejer 2-2.c:33:6: warning: unused variable 'cantImpar' [-Wunused-variable]
+   33 |  int cantImpar;
+      |      ^~~~~~~~~
+..\src\Ejer 2-2.c:32:6: warning: unused variable 'acumNeg' [-Wunused-variable]
+   32 |  int acumNeg;
+      |      ^~~~~~~
+..\src\Ejer 2-2.c:30:6: warning: unused variable 'acumPar' [-Wunused-variable]
+   30 |  int acumPar;
+      |      ^~~~~~~
+..\src\Ejer 2-2.c:26:6: warning: unused variable 'contador' [-Wunused-variable]
+   26 |  int contador = 0;
+      |      ^~~~~~~~
+..\src\Ejer 2-2.c:49:5: warning: 'mayorPar' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   49 |   if(numIngre > mayorPar || i == 0)
+      |     ^
+gcc -o "Ejer 2-2.exe" "src\\Ejer 2-2.o" 
+
+12:02:00 Build Finished. 0 errors, 8 warnings. (took 963ms)
+

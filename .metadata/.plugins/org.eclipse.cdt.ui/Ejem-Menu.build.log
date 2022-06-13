@@ -1,0 +1,36 @@
+12:01:56 **** Rebuild of configuration Debug for project Ejem-Menu ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejem-Menu.o" "..\\src\\Ejem-Menu.c" 
+..\src\Ejem-Menu.c: In function 'menu':
+..\src\Ejem-Menu.c:142:21: warning: implicit declaration of function 'pedirNumero' [-Wimplicit-function-declaration]
+  142 |             numero1=pedirNumero("ingrese el primer numero: ");
+      |                     ^~~~~~~~~~~
+..\src\Ejem-Menu.c:160:19: warning: implicit declaration of function 'suma' [-Wimplicit-function-declaration]
+  160 |             sumar=suma(numero1,numero2);
+      |                   ^~~~
+..\src\Ejem-Menu.c:161:20: warning: implicit declaration of function 'resta' [-Wimplicit-function-declaration]
+  161 |             restar=resta(numero1,numero2);
+      |                    ^~~~~
+..\src\Ejem-Menu.c:162:21: warning: implicit declaration of function 'division' [-Wimplicit-function-declaration]
+  162 |             dividir=division(numero1,numero2);
+      |                     ^~~~~~~~
+..\src\Ejem-Menu.c:163:25: warning: implicit declaration of function 'multiplicacion' [-Wimplicit-function-declaration]
+  163 |             multiplicar=multiplicacion(numero1,numero2);
+      |                         ^~~~~~~~~~~~~~
+..\src\Ejem-Menu.c:164:31: warning: implicit declaration of function 'resolverFactorial' [-Wimplicit-function-declaration]
+  164 |             factorizarNumero1=resolverFactorial(numero1);
+      |                               ^~~~~~~~~~~~~~~~~
+gcc -o Ejem-Menu.exe "src\\Ejem-Menu.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Ejem-Menu.o: in function `menu':
+C:\Users\54115\eclipse-workspace\Ejem-Menu\Debug/../src/Ejem-Menu.c:142: undefined reference to `pedirNumero'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54115\eclipse-workspace\Ejem-Menu\Debug/../src/Ejem-Menu.c:148: undefined reference to `pedirNumero'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54115\eclipse-workspace\Ejem-Menu\Debug/../src/Ejem-Menu.c:160: undefined reference to `suma'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54115\eclipse-workspace\Ejem-Menu\Debug/../src/Ejem-Menu.c:161: undefined reference to `resta'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54115\eclipse-workspace\Ejem-Menu\Debug/../src/Ejem-Menu.c:162: undefined reference to `division'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54115\eclipse-workspace\Ejem-Menu\Debug/../src/Ejem-Menu.c:163: undefined reference to `multiplicacion'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54115\eclipse-workspace\Ejem-Menu\Debug/../src/Ejem-Menu.c:164: undefined reference to `resolverFactorial'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54115\eclipse-workspace\Ejem-Menu\Debug/../src/Ejem-Menu.c:165: undefined reference to `resolverFactorial'
+collect2.exe: error: ld returned 1 exit status
+
+12:01:57 Build Failed. 9 errors, 6 warnings. (took 1s.311ms)
+

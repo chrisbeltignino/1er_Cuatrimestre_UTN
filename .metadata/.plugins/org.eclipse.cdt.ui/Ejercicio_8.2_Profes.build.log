@@ -1,0 +1,9 @@
+12:02:09 **** Rebuild of configuration Debug for project Ejercicio_8.2_Profes ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio_8.2_Profes.o" "..\\src\\Ejercicio_8.2_Profes.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Producto.o" "..\\src\\Producto.c" 
+gcc -o Ejercicio_8.2_Profes.exe "src\\Ejercicio_8.2_Profes.o" "src\\Producto.o" "src\\inputs.o" 
+
+12:02:12 Build Finished. 0 errors, 0 warnings. (took 2s.359ms)
+

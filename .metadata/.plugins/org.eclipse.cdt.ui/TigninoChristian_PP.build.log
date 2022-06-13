@@ -1,0 +1,217 @@
+23:21:08 **** Rebuild of configuration Debug for project TigninoChristian_PP ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:13:2: error: conflicting types for 'eDiagnostico'
+   13 | }eDiagnostico;
+      |  ^~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:13:2: note: previous declaration of 'eDiagnostico' was here
+   13 | }eDiagnostico;
+      |  ^~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:20:2: error: conflicting types for 'eMecanico'
+   20 | }eMecanico;
+      |  ^~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:20:2: note: previous declaration of 'eMecanico' was here
+   20 | }eMecanico;
+      |  ^~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:27:2: error: conflicting types for 'eFecha'
+   27 | }eFecha;
+      |  ^~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:27:2: note: previous declaration of 'eFecha' was here
+   27 | }eFecha;
+      |  ^~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:38:2: error: conflicting types for 'eConsulta'
+   38 | }eConsulta;
+      |  ^~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:38:2: note: previous declaration of 'eConsulta' was here
+   38 | }eConsulta;
+      |  ^~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:48:5: error: conflicting types for 'iniciarConsulta'
+   48 | int iniciarConsulta(eConsulta list[],int len);
+      |     ^~~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:48:5: note: previous declaration of 'iniciarConsulta' was here
+   48 | int iniciarConsulta(eConsulta list[],int len);
+      |     ^~~~~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:50:5: error: conflicting types for 'buscarConsultaID'
+   50 | int buscarConsultaID(eConsulta* list, int len);
+      |     ^~~~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:50:5: note: previous declaration of 'buscarConsultaID' was here
+   50 | int buscarConsultaID(eConsulta* list, int len);
+      |     ^~~~~~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:52:5: error: conflicting types for 'buscarMecanicoID'
+   52 | int buscarMecanicoID(eMecanico* list, int len);
+      |     ^~~~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:52:5: note: previous declaration of 'buscarMecanicoID' was here
+   52 | int buscarMecanicoID(eMecanico* list, int len);
+      |     ^~~~~~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:54:5: error: conflicting types for 'buscarConsultaConMecanicoID'
+   54 | int buscarConsultaConMecanicoID(eConsulta* list, int len);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:54:5: note: previous declaration of 'buscarConsultaConMecanicoID' was here
+   54 | int buscarConsultaConMecanicoID(eConsulta* list, int len);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:65:6: error: conflicting types for 'altaConsulta'
+   65 | void altaConsulta(eConsulta* list, int len, eDiagnostico* diagnostico, eMecanico* medico, eFecha* fecha, int* flag);
+      |      ^~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:65:6: note: previous declaration of 'altaConsulta' was here
+   65 | void altaConsulta(eConsulta* list, int len, eDiagnostico* diagnostico, eMecanico* medico, eFecha* fecha, int* flag);
+      |      ^~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:67:5: error: conflicting types for 'agregarConsulta'
+   67 | int agregarConsulta(eConsulta* list, int len, int id, char nombreCliente[], float cotizacion, int dia, int mes, int anio, eFecha* fecha);
+      |     ^~~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:67:5: note: previous declaration of 'agregarConsulta' was here
+   67 | int agregarConsulta(eConsulta* list, int len, int id, char nombreCliente[], float cotizacion, int dia, int mes, int anio, eFecha* fecha);
+      |     ^~~~~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:69:5: error: conflicting types for 'cargarPasajero'
+   69 | int cargarPasajero(eConsulta* list, int len, eFecha* fecha);
+      |     ^~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:69:5: note: previous declaration of 'cargarPasajero' was here
+   69 | int cargarPasajero(eConsulta* list, int len, eFecha* fecha);
+      |     ^~~~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:71:6: error: conflicting types for 'modificarConsultas'
+   71 | void modificarConsultas(eConsulta* list, int len, eMecanico* medico, eFecha* fecha, int* flag);
+      |      ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:71:6: note: previous declaration of 'modificarConsultas' was here
+   71 | void modificarConsultas(eConsulta* list, int len, eMecanico* medico, eFecha* fecha, int* flag);
+      |      ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:73:5: error: conflicting types for 'modificoConsulta'
+   73 | int modificoConsulta(eConsulta* list, int len, eMecanico* medico, eFecha* fecha);
+      |     ^~~~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:73:5: note: previous declaration of 'modificoConsulta' was here
+   73 | int modificoConsulta(eConsulta* list, int len, eMecanico* medico, eFecha* fecha);
+      |     ^~~~~~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:75:6: error: conflicting types for 'bajaConsulta'
+   75 | void bajaConsulta(eConsulta* list, int len, eMecanico* mecanico, eDiagnostico* diagnostico, eFecha* fecha, int* flag);
+      |      ^~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:75:6: note: previous declaration of 'bajaConsulta' was here
+   75 | void bajaConsulta(eConsulta* list, int len, eMecanico* mecanico, eDiagnostico* diagnostico, eFecha* fecha, int* flag);
+      |      ^~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:77:5: error: conflicting types for 'removePassenger'
+   77 | int removePassenger(eConsulta* list, int len, eFecha* fecha, eDiagnostico* diagnostico, eMecanico* mecanico);
+      |     ^~~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:77:5: note: previous declaration of 'removePassenger' was here
+   77 | int removePassenger(eConsulta* list, int len, eFecha* fecha, eDiagnostico* diagnostico, eMecanico* mecanico);
+      |     ^~~~~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:79:6: error: conflicting types for 'diagnosticarConsultas'
+   79 | void diagnosticarConsultas(eConsulta* list, int len, eMecanico* mecanico, eDiagnostico* diagnostico, eFecha* fecha, int* flag);
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:79:6: note: previous declaration of 'diagnosticarConsultas' was here
+   79 | void diagnosticarConsultas(eConsulta* list, int len, eMecanico* mecanico, eDiagnostico* diagnostico, eFecha* fecha, int* flag);
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:81:5: error: conflicting types for 'diagnosticoConsulta'
+   81 | int diagnosticoConsulta(eConsulta* list, int len, eFecha* fecha, eMecanico* mecanico, eDiagnostico* diagnostico);
+      |     ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:81:5: note: previous declaration of 'diagnosticoConsulta' was here
+   81 | int diagnosticoConsulta(eConsulta* list, int len, eFecha* fecha, eMecanico* mecanico, eDiagnostico* diagnostico);
+      |     ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:83:6: error: conflicting types for 'cargaForzada'
+   83 | void cargaForzada(eConsulta* list, int len, int* flag);
+      |      ^~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:83:6: note: previous declaration of 'cargaForzada' was here
+   83 | void cargaForzada(eConsulta* list, int len, int* flag);
+      |      ^~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:85:6: error: conflicting types for 'HardcodearMecanicos'
+   85 | void HardcodearMecanicos(eMecanico* mecanico, int tam);
+      |      ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\main.c:4:
+..\src\ArrayConsulta.h:85:6: note: previous declaration of 'HardcodearMecanicos' was here
+   85 | void HardcodearMecanicos(eMecanico* mecanico, int tam);
+      |      ^~~~~~~~~~~~~~~~~~~
+..\src\main.c: In function 'menu':
+..\src\main.c:33:61: warning: passing argument 5 of 'bajaConsulta' from incompatible pointer type [-Wincompatible-pointer-types]
+   33 |              bajaConsulta(list, MAX, mecanico, diagnostico, &flag);
+      |                                                             ^~~~~
+      |                                                             |
+      |                                                             int *
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:75:101: note: expected 'eFecha *' {aka 'struct <anonymous> *'} but argument is of type 'int *'
+   75 | void bajaConsulta(eConsulta* list, int len, eMecanico* mecanico, eDiagnostico* diagnostico, eFecha* fecha, int* flag);
+      |                                                                                             ~~~~~~~~^~~~~
+..\src\main.c:33:14: error: too few arguments to function 'bajaConsulta'
+   33 |              bajaConsulta(list, MAX, mecanico, diagnostico, &flag);
+      |              ^~~~~~~~~~~~
+In file included from ..\src\outputs.h:2,
+                 from ..\src\main.c:5:
+..\src\ArrayConsulta.h:75:6: note: declared here
+   75 | void bajaConsulta(eConsulta* list, int len, eMecanico* mecanico, eDiagnostico* diagnostico, eFecha* fecha, int* flag);
+      |      ^~~~~~~~~~~~
+..\src\main.c:36:14: warning: implicit declaration of function 'mostrarPasajeros' [-Wimplicit-function-declaration]
+   36 |              mostrarPasajeros(list, MAX, mecanico, diagnostico, fecha, &flag);
+      |              ^~~~~~~~~~~~~~~~
+..\src\main.c:45:46: warning: passing argument 3 of 'mostrarListaConsulta' from incompatible pointer type [-Wincompatible-pointer-types]
+   45 |              mostrarListaConsulta(list, MAX, mecanico, diagnostico, fecha);
+      |                                              ^~~~~~~~
+      |                                              |
+      |                                              eMecanico * {aka struct <anonymous> *}
+In file included from ..\src\main.c:5:
+..\src\outputs.h:16:60: note: expected 'eFecha *' {aka 'struct <anonymous> *'} but argument is of type 'eMecanico *' {aka 'struct <anonymous> *'}
+   16 | int mostrarListaConsulta(eConsulta* list, int len, eFecha* fecha, eDiagnostico* diagnostico, eMecanico* mecanico);
+      |                                                    ~~~~~~~~^~~~~
+..\src\main.c:45:69: warning: passing argument 5 of 'mostrarListaConsulta' from incompatible pointer type [-Wincompatible-pointer-types]
+   45 |              mostrarListaConsulta(list, MAX, mecanico, diagnostico, fecha);
+      |                                                                     ^~~~~
+      |                                                                     |
+      |                                                                     eFecha * {aka struct <anonymous> *}
+In file included from ..\src\main.c:5:
+..\src\outputs.h:16:105: note: expected 'eMecanico *' {aka 'struct <anonymous> *'} but argument is of type 'eFecha *' {aka 'struct <anonymous> *'}
+   16 | int mostrarListaConsulta(eConsulta* list, int len, eFecha* fecha, eDiagnostico* diagnostico, eMecanico* mecanico);
+      |                                                                                              ~~~~~~~~~~~^~~~~~~~
+
+23:21:08 Build Failed. 20 errors, 4 warnings. (took 495ms)
+

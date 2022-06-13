@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\54115\Desktop\TP1\likedList"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\TP_[4] cambiado\LinkedList"/>
+			<item value="C:\Users\54115\Desktop\TP1\TP_[4]\linkedList"/>
+			<item value="C:\Users\54115\Desktop\TP1\TP_[4]\LinkedList"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\TP_[4]\LinkedList"/>
+			<item value="C:\Users\54115\Downloads\TP4.zip (Unzipped Files)\likedList"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Trabajos-Practicos-Laboratorio-1-master\TP4_Laboratorio1"/>
+			<item value="C:\Users\54115\Desktop\TP1\TP_[4]"/>
+			<item value="C:\Users\54115\Desktop\TP1\TP_[2]"/>
+			<item value="C:\Users\54115\Desktop\TP1\TP_[3]\TP_[3]"/>
+			<item value="C:\Users\54115\Desktop\TP1\TP_[3]"/>
+			<item value="C:\Users\54115\Downloads\eclipse_tp3_v4.zip (Unzipped Files)\eclipse_tp3_v4\tp3_windows"/>
+			<item value="C:\Users\54115\eclipse-workspace\TP_[2]"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\tp_laboratorio_1-main\TP3 ARCHIVOS"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\tp_laboratorio_1-main\TP2 ABM"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Trabajos-Practicos-Laboratorio-1-master\TP2_Laboratorio_1"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Programacion1_Laboratorio1\Parciales\PParcial1"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Programacion1_Laboratorio1\Parciales\PParcial"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Primer Parcial Parte 2"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\TP2_laboratorio_1-master"/>
+			<item value="C:\Users\54115\eclipse-workspace\TP2"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Clases-master\TP3"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Clases-master\Arrays"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Clases-master\archivos"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Clases-master\Vectores dinamicos"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Clases-master\Sillas del aula"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Clases-master\Memoria dinamica"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Clases-master\Clase 7"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Clases-master\4\clase 5"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Clases-master\clase 4"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Clases-master\clase 3"/>
+			<item value="C:\Users\54115\Desktop\PC\Programacion\Facultad\Clases-master\clase 2"/>
+			<item value="C:\Users\54115\Downloads\Primer Parcial Parte 2"/>
+			<item value="C:\Users\54115\eclipse-workspace\TP_Laboratorio_1-master"/>
+			<item value="C:\Users\54115\Downloads\TP_Laboratorio_1-master"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.cdt.ui.wizards.NewCWizard2"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+		</list>
+	</section>
+	<section name="org.eclipse.text.quicksearch.internal.ui.QuickSearchDialog.DIALOG_SETTINGS">
+		<item key="LAST_QUERY" value=""/>
+		<item key="PATH_FILTER" value=""/>
+		<item key="CASE_SENSITIVE" value="true"/>
+		<item key="KEEP_OPEN" value="false"/>
+		<list key="COLUMN_WIDTHS">
+			<item value="40"/>
+			<item value="400"/>
+			<item value="118"/>
+		</list>
+		<list key="SASH_WEIGHTS">
+			<item value="714"/>
+			<item value="285"/>
+		</list>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="388"/>
+			<item key="DIALOG_Y_ORIGIN" value="44"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="426"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
+		<item key="DIALOG_WIDTH" value="525"/>
+		<item key="DIALOG_HEIGHT" value="580"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

@@ -1,0 +1,8 @@
+09:29:04 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM.o" "..\\src\\ABM.c" 
+gcc -o TP_2.exe "src\\ABM.o" "src\\main.o" 
+
+09:29:05 Build Finished. 0 errors, 0 warnings. (took 865ms)
+

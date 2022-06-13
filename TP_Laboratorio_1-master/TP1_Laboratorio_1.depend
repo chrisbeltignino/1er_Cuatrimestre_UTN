@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1554347819 source:c:\users\xaluc\desktop\tp1_programacion1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1554430094 source:c:\users\xaluc\desktop\tp1_programacion1\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1554347223 c:\users\xaluc\desktop\tp1_programacion1\menu.h
+
+1554429290 source:c:\users\xaluc\desktop\tp1_programacion1\operaciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1554428707 c:\users\xaluc\desktop\tp1_programacion1\funciones.h
+
+1554347819 source:c:\users\xaluc\desktop\tp1_laboratorio_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1554428707 c:\users\xaluc\desktop\tp1_laboratorio_1\funciones.h
+
+1554429290 source:c:\users\xaluc\desktop\tp1_laboratorio_1\operaciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1554430419 source:c:\users\xaluc\desktop\tp1_laboratorio_1\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+

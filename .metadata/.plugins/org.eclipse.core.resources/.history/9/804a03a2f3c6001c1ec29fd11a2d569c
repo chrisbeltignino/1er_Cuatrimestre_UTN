@@ -1,0 +1,327 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "ArrayPassanger.h"
+
+#define LIBRE 0
+#define OCUPADO 1
+
+void indicoPasajero(Passenger list[], int len, int status)
+{
+	int i;
+	for(i=0; i<len; i++)
+	{
+		list[i].isEmpty = status;
+	}
+}
+
+int initPassengers(Passenger list[], int len)
+{
+	int i;
+	int index = -1;
+
+	for(i=0; i<len; i++)
+	{
+		if(list[i].isEmpty == LIBRE)
+		{
+			index = i;
+			break;
+		}
+	}
+	return index;
+}
+
+int addPassenger(Passenger* list, int len, int id, char name[],char lastName[],float price, Type* typeP, char flycode[])
+{
+
+	int retorno = -1;
+	int i;
+	i = initPassengers(list, len);
+
+	list[i].id=id;
+	pedirCadena(list[i].name, "Ingrese nombre: ", "ERROR. Ingrese nombre nuevamente, hasta 51 caracteres, reingrese: ", 51);
+	pedirCadena(list[i].lastName, "Ingrese apellido: ", "ERROR. Ingrese apellido nuevamente, hasta 51 caracteres, reingrese: ", 51);
+	pedirFlotante(&list[i].price, "Ingrese precio: ", "ERROR. Ingrese precio nuevamente : ", 1, 1000000000);
+	pedirEntero(&list[i].idType, "Ingrese el tipo (Turistica = 1, Economica = 2, Business = 3, Primera clase = 4): ", "ERROR. Ingrese el tipo nuevamente (Turistica = 1, Economica = 2, Business = 3, Primera clase = 4): ", 0, 4);
+	pedirCadena(list[i].flycode, "Ingrese codigo de vuelo: ", "ERROR. Ingrese codigo de vuelo nuevamente: ", 10);
+
+	printf("\nEl pasajero a agregar:\n\n%-5s %-20s %-20s %-20s %-20s %-20s\n", "ID", "Nombre", "Apellido", "Precio", "Tipo de pasajero", "Codigo de vuelo");
+	mostrarUnPasajero(list[i], typeP, len);
+
+	if(!verificarConfirmacion("\nIngrese 's' para confirmar el alta del producto: "))
+	{
+		list[i].isEmpty = OCUPADO;
+		retorno = 0;
+	}
+	return retorno;
+}
+
+int cargarPasajero(Passenger list[], int len, int id, char name[],char lastName[],float price, Type typeP[], char flycode[], int* ultimoIdIngresado)
+{
+	int retorno = -1;
+	int ids;
+	int index = initPassengers(list, len);
+
+	ids=*ultimoIdIngresado;
+
+	if(index != -1) //Si hay lugar en el array
+	{
+		printf("\nDando de alta un producto...\n\n");
+		if(!addPassenger(list, len, id, name ,lastName, price,  typeP,  flycode))
+		{
+			printf("\nSe cargo el pasajero!\n\n");
+			ids++;
+			*ultimoIdIngresado=ids;
+		}else
+		{
+			printf("\nSe cancelo el alta del producto.\n\n");
+
+		}
+		retorno = 0;
+	}else
+	{
+		printf("\nError. No hay espacio disponible.\n\n");
+	}
+
+	return retorno;
+}
+
+int findPassengerById(Passenger* list, int len, int id)
+{
+	int i;
+	int index = -1;
+
+	for(i=0; i<len; i++)
+	{
+		if(list[i].isEmpty == OCUPADO && list[i].id == id)
+		{
+			index = i;
+			break;
+		}
+	}
+	return index;
+}
+
+int removePassenger(Passenger* list, int len, int id)
+{
+	int retorno = -1;
+	int i;
+	int loEncontro = 0;
+	printf("Ingrese id: ");
+	scanf("%d", &id);
+
+	for(i=0; i<len; i++)
+	{
+		if(id == list[i].id)
+		{
+			list[i].isEmpty = LIBRE;
+			loEncontro = 1;
+			break;//modifcar
+		}
+	}
+
+	if(loEncontro==0)
+	{
+		printf("El dato no existe");
+	}
+
+	return retorno;
+}
+
+int sortPassengers(Passenger* list, int len, int order)
+{
+	int retorno = -1;
+	int i;
+	int j;
+	int typeAux;
+	Passenger nombreAux;
+
+	for(i = 0;i < len-1; i++)
+	{
+		for(j = i+1;j < len; j++)
+		{
+			if(strcmp(list[i].name, list[j].name)==1)
+			{
+				strcpy(nombreAux, list[i]);
+				strcpy(list[i], list[j]);
+				strcpy(list[j], nombreAux);
+
+				typeAux = list[i].idType;
+				list[i].idType = list[j].idType;
+				list[j].idType = typeAux;
+			}
+		}
+	}
+	return retorno;
+}
+
+int printPassenger(Passenger* list, int length ,Type* typeP, int len)
+{
+	int i;
+	printf("\nMostrando lista de pasajeros...\n\n"
+		   "%-5s %-20s %-20s %-20s %-20s %-20s\n", "ID", "Nombre", "Apellido", "Precio", "Tipo de pasajero", "Codigo de vuelo");
+	for(i=0; i<length; i++)
+	{
+		if(list[i].isEmpty == OCUPADO)
+		{
+			mostrarUnPasajero(list[i], typeP, len);
+		}
+	}
+	printf("\n");
+	return 0;
+}
+
+void mostrarUnPasajero(Passenger list, Type* typeP, int len)
+{
+
+    char tipoPasajero[20];
+    int i;
+
+    for(i=0; i<len; i++)
+    {
+        if(list.id == typeP[i].idType)
+        {
+            strcpy(tipoPasajero, typeP[i].typePassenger);
+            break;
+        }
+    }
+
+    printf ("\n%d",list.id);
+	printf("\t\t%s",list.name);
+	printf("\t\t%s",list.lastName);
+	printf("\t\t%f",list.price);
+	printf("\t\t%s",tipoPasajero);
+	printf("\t\t%s",list.flycode);
+    //printf("%d %s %s %f %d %c\n", list.id, list.name, list.lastName, list.price, tipoPasajero, list.flycode);
+}
+/*
+ePassenger cargarPasajero(void)
+{
+	pedirCadena(list.name, "Ingrese nombre: ", "Ingrese Nombre invalido, hasta 51 caracteres, reingrese: ", 51);
+	pedirCadena(&list.lastName, "Ingrese apellido: ", "Ingrese apellido valida  (EEUU = 0, CHINA = 1, OTRO = 2): ", 51);
+	pedirEntero(&list.price, "Ingrese precio: ", "Ingrese precio valido : ", 1, 1000000000);
+	pedirEntero(&list.idType, "Ingrese el precio: ", "Ingrese un precio valido: ", 1000, 300000);
+	pedirEntero(&list.flycode, "Ingrese codigo de vuelo: ", "Ingrese codigo de vuelo valido: ", 10);
+}
+*/
+int menuDeOpciones(char mensaje[])
+{
+    int opcion;
+    printf("%s", mensaje);
+    scanf("%d", &opcion);
+
+    return opcion;
+}
+
+int verificarConfirmacion(char* mensaje)
+{
+	int retorno = -1;
+	char respuesta;
+
+	pedirCaracter(&respuesta, mensaje);
+	if(respuesta == 's' || respuesta == 'S')
+	{
+		retorno = 0;
+	}
+
+	return retorno;
+}
+
+int pedirCaracter(char* caracter, char* mensaje)
+{
+	int retorno = -1;
+
+	if(caracter != NULL && mensaje != NULL)
+	{
+		printf("%s", mensaje);
+		fflush(stdin);
+		*caracter = getchar();
+		retorno = 0;
+	}
+
+	return retorno;
+}
+
+int pedirEntero(int* entero, char* mensaje, char* mensajeError, int min, int max)
+{
+	int retorno = -1;
+	int numeroIngresado;
+
+	if(entero != NULL && mensaje != NULL && mensajeError != NULL && min < max)
+	{
+		printf("%s", mensaje);
+		fflush(stdin);
+		scanf("%d", &numeroIngresado);
+
+		while(numeroIngresado < min || numeroIngresado > max)
+		{
+			printf("%s", mensajeError);
+			fflush(stdin);
+			scanf("%d", &numeroIngresado);
+		}
+
+		*entero = numeroIngresado;
+		retorno = 0;
+	}
+
+	return retorno;
+}
+
+int pedirFlotante(float* flotante, char* mensaje, char* mensajeError, float min, float max)
+{
+	int retorno = -1;
+	float numeroIngresado;
+
+	if(flotante != NULL && mensaje != NULL && mensajeError != NULL && min < max)
+	{
+		printf("%s", mensaje);
+		fflush(stdin);
+		scanf("%f", &numeroIngresado);
+
+		while(numeroIngresado < min || numeroIngresado > max)
+		{
+			printf("%s", mensajeError);
+			fflush(stdin);
+			scanf("%f", &numeroIngresado);
+		}
+
+		*flotante = numeroIngresado;
+		retorno = 0;
+	}
+
+	return retorno;
+}
+
+int pedirCadena(char* cadena, char* mensaje, char* mensajeError, int max)
+{
+	int retorno = -1;
+	char buffer[256];
+	int tam;
+
+	if(cadena != NULL && mensaje != NULL && mensajeError != NULL && max > 0)
+	{
+		printf("%s", mensaje);
+		fflush(stdin);
+		scanf("%[^\n]", buffer);
+		tam = strlen(buffer);
+
+		while(tam > max)
+		{
+			printf("%s", mensajeError);
+			fflush(stdin);
+			scanf("%[^\n]", buffer);
+			tam = strlen(buffer);
+		}
+
+		strcpy(cadena, buffer);
+		retorno = 0;
+	}
+
+	return retorno;
+}
+/*
+void mostrarUnPasajero(Passenger* list, Type* typeP)
+{
+	printf("%d %s %s %f %d %c\n", list->id, list->name, list->lastName, list->price, list->idType, list->flycode);
+}
+*/

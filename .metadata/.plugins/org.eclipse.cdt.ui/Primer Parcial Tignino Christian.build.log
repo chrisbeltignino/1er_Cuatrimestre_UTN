@@ -1,0 +1,9 @@
+01:14:27 **** Incremental Build of configuration Debug for project Primer Parcial Tignino Christian ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayConsulta.o" "..\\src\\ArrayConsulta.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\outputs.o" "..\\src\\outputs.c" 
+gcc -o "Primer Parcial Tignino Christian.exe" "src\\ArrayConsulta.o" "src\\inputs.o" "src\\main.o" "src\\outputs.o" 
+
+01:14:28 Build Finished. 0 errors, 0 warnings. (took 1s.145ms)
+

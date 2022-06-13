@@ -1,0 +1,10 @@
+09:01:00 **** Rebuild of configuration Debug for project pruebaTp3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54115\\Desktop\\TP1\\TP_[3]" -o pruebaTp3.exe Controller.o Passenger.o main.o parser.o -lLinkedList 
+
+09:01:02 Build Finished. 0 errors, 0 warnings. (took 2s.169ms)
+

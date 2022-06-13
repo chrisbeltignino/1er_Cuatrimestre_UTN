@@ -1,0 +1,24 @@
+12:01:59 **** Rebuild of configuration Debug for project Ejer 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'BuscarPorPrecio':
+..\src\Productos.c:389:60: error: incompatible type for argument 2 of 'MostrarUnProducto'
+  389 |             MostrarUnProducto(listaProductos[i], listaTipos[indiceTipo], sizeTipo);
+      |                                                  ~~~~~~~~~~^~~~~~~~~~~~
+      |                                                            |
+      |                                                            stipoProducto {aka struct <anonymous>}
+..\src\Productos.c:79:60: note: expected 'stipoProducto *' {aka 'struct <anonymous> *'} but argument is of type 'stipoProducto' {aka 'struct <anonymous>'}
+   79 | void MostrarUnProducto(sProducto unProducto, stipoProducto listaTipos[], int tp)
+      |                                              ~~~~~~~~~~~~~~^~~~~~~~~~~~
+..\src\Productos.c: In function 'BuscarMenorPorTipo':
+..\src\Productos.c:446:60: error: incompatible type for argument 2 of 'MostrarUnProducto'
+  446 |             MostrarUnProducto(listaProductos[i], listaTipos[indice], sizeTipo);
+      |                                                  ~~~~~~~~~~^~~~~~~~
+      |                                                            |
+      |                                                            stipoProducto {aka struct <anonymous>}
+..\src\Productos.c:79:60: note: expected 'stipoProducto *' {aka 'struct <anonymous> *'} but argument is of type 'stipoProducto' {aka 'struct <anonymous>'}
+   79 | void MostrarUnProducto(sProducto unProducto, stipoProducto listaTipos[], int tp)
+      |                                              ~~~~~~~~~~~~~~^~~~~~~~~~~~
+
+12:01:59 Build Failed. 2 errors, 0 warnings. (took 343ms)
+

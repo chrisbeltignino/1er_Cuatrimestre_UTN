@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "ArrayPassanger.h"
+#include "outputs.h"
+#include "inputs.h"
+
+void menu()
+{
+	setbuf(stdout, NULL);
+    int opcion;
+    int cantidadPasajeros = 5;
+    int ultimoIdIngresado = 0;
+
+    Passenger list[MAX];
+    Type typeP[TY] = {{1,"Turistica"},{2,"Economica"},{3,"Business"},{4,"Primera clase"}};
+    Status status[TS] = {{1,"Activo"},{2,"Inactivo"}};
+    //hardcodearEmpleado(lista,6);
+    initPassengers(list, MAX);
+    do
+    {
+        opcion = menuDeOpciones("1.Alta\n2.Modificar\n3.Baja\n4.Mostrar\n5.Salir\nElija una opcion: ");
+        switch(opcion)
+        {
+            case 1:
+				if(!cargarPasajero(list, MAX, list.id, list.name, list.lastName, list.price, typeP, status, list.flycode, &ultimoIdIngresado))
+				{
+					cantidadPasajeros++;
+				}
+				system("pause");
+				limpiarConsola();
+                break;
+            case 2:
+            	modificarEmpleado(list, MAX, typeP, status, list.id);
+            break;
+            case 3:
+				if(!removePassenger(list, MAX, list.id))
+				{
+					cantidadPasajeros--;
+				}
+				system("pause");
+				limpiarConsola();
+            break;
+            case 4:
+
+            break;
+            case 5:
+            	limpiarConsola();
+            	printf("Saliendo...");
+            break;
+
+            default:
+            	limpiarConsola();
+                printf("Ingrese una opcion valida");
+
+        }
+    }while(opcion!=5);
+}
+

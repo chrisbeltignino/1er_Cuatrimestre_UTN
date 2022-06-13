@@ -1,0 +1,12 @@
+19:09:29 **** Rebuild of configuration Debug for project TP_[3] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Menus.o "..\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Utn.o "..\\Utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54115\\Desktop\\TP1\\TP_[3]" -o TP_[3].exe Controller.o Menus.o Passenger.o Utn.o main.o parser.o -lLinkedList 
+
+19:09:39 Build Finished. 0 errors, 0 warnings. (took 9s.705ms)
+
